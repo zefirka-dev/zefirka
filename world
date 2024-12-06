@@ -1,1 +1,29 @@
-Hello world
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменить цвет текста</title>
+    <style>
+        .newColor {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<p id="myText">Это пример текста.</p>
+<button onclick="changeTextColor()">Изменить цвет</button>
+
+<script>
+    function changeTextColor() {
+        // Получаем элемент по его ID
+        var textElement = document.getElementById("myText");
+
+        // Добавляем CSS класс, который изменяет цвет
+        textElement.classList.add("newColor");
+    }
+</script>
+
+</body>
+</html>
